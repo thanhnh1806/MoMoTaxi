@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_65sdp"
+    android:layout_marginTop="@dimen/_40sdp"
+    android:background="#A6000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_230sdp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="540">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="493" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="47"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:weightSum="493">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="223">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="270">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="223"
+                            android:orientation="horizontal" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="47">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="bottom"
+                                android:background="@drawable/background_gradient_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="550">
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="358">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="@string/from"
+                                            android:textAllCaps="true"
+                                            android:textSize="16sp" />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_50sdp"
+                                            android:layout_height="@dimen/_30sdp"
+                                            android:src="@drawable/icon_start_endtaxi" />
+                                    </LinearLayout>
+                                </FrameLayout>
+
+                                <FrameLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="192">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <AutoCompleteTextView
+                                            android:id="@+id/etNearbyLocation"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:dropDownWidth="@dimen/_250sdp"
+                                            android:inputType="text"
+                                            android:singleLine="true"
+                                            android:textColor="#858a8e"
+                                            android:textColorHint="#858a8e"
+                                            android:visibility="invisible" />
+
+                                        <TextView
+                                            android:id="@+id/tvCurrentAddress"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginRight="@dimen/_30sdp"
+                                            android:gravity="left"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <FrameLayout
+                                            android:id="@+id/btnNearbyLocation"
+                                            android:layout_width="@dimen/_30sdp"
+                                            android:layout_height="@dimen/_50sdp"
+                                            android:layout_gravity="center_vertical|right">
+
+                                            <ImageView
+                                                android:id="@+id/ivNearbyLocation"
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:layout_gravity="left|center_vertical"
+                                                android:src="@drawable/icon_current_location"
+                                                android:visibility="visible" />
+
+                                            <ProgressBar
+                                                android:id="@+id/pbNearbyLocation"
+                                                android:layout_width="@dimen/_15sdp"
+                                                android:layout_height="@dimen/_15sdp"
+                                                android:layout_gravity="left|center_vertical"
+                                                android:indeterminate="true"
+                                                android:visibility="gone" />
+                                        </FrameLayout>
+
+                                    </FrameLayout>
+                                </FrameLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivClose"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="top|left"
+                        android:src="@drawable/icon_close" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="270"
+                    android:orientation="horizontal"
+                    android:weightSum="550">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="358">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/to"
+                                android:textAllCaps="true"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_50sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:src="@drawable/icon_end_endtaxi" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="192">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/tvAddressTo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@android:color/white"
+                            android:dropDownWidth="@dimen/_250sdp"
+                            android:gravity="left|center_vertical"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:minHeight="@dimen/_20sdp"
+                            android:orientation="vertical"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_12sdp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            app:sl_cornerRadius="100dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#33000000"
+            app:sl_shadowRadius="3dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle_background_opacity_border_white">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_background_opacity_border_white">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle_background_white_border_gray">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/avatar_green" />
+                    </FrameLayout>
+                </FrameLayout>
+            </FrameLayout>
+        </com.dd.ShadowLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/btnNonApp"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_orange_non_app">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_check_green" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnStartNonApp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/background_orange_radius_100"
+                android:gravity="center"
+                android:text="@string/start"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_20sdp"></TextView>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

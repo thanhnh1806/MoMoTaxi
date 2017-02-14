@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:weightSum="640">
+
+        <TextView
+            android:id="@+id/tvDayRange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="518"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_13sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="122"
+            android:orientation="horizontal"
+            android:weightSum="518">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_weight="182"
+                android:background="@drawable/background_progress_bar"
+                android:max="100"
+                android:padding="2dp"
+                android:progress="70"
+                android:progressDrawable="@drawable/custom_progress_bar" />
+
+            <TextView
+                android:id="@+id/tvSale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="336"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/_12sdp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

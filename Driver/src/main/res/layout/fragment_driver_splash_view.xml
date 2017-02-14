@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/driver_splash_background_gradient"
+    tools:context=".SplashController">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1136">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="998" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="138"
+            android:orientation="vertical"
+            android:weightSum="998">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="442"
+                android:background="@drawable/driver_splash_background_map" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="556" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1136">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="49.50dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="99.50dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:src="@drawable/driver_splash_icon_cung" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="13dp"
+                    android:src="@drawable/driver_splash_logo_cabby" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/driver"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="69sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="-10dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/welcome_back"
+                android:textColor="@android:color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="11dp"
+        android:gravity="center_horizontal"
+        android:text="@string/present_by_asecro"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="192dp"
+        android:layout_height="88dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40.50dp"
+        android:src="@drawable/driver_splash_icon_car" />
+
+    <ImageView
+        android:id="@+id/ivLoading"
+        android:layout_width="38.5dp"
+        android:layout_height="38.5dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="176.5dp"
+        android:background="@drawable/driver_splash_loading" />
+
+    <TextView
+        android:id="@+id/tvHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="170dp"
+        android:gravity="center"
+        android:text="@string/here"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="55sp"
+        android:visibility="gone" />
+</FrameLayout>

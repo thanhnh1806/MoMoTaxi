@@ -1,0 +1,541 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="1007"
+    tools:context="bhtech.com.cabbytaxi.RateDriver.RateTaxiView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="122">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="885">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="252"
+                android:orientation="vertical"
+                android:weightSum="633">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="473"
+                    android:orientation="vertical"
+                    android:weightSum="160">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="@string/thank_you_for_talking_the_ride"
+                        android:textColor="#808080"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="80"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/spend_a_momment_to_rate_this_driver"
+                        android:textColor="#808080"
+                        android:textSize="@dimen/_14sdp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="160">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="583" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="57"
+                            android:orientation="horizontal"
+                            android:weightSum="583">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="62"
+                                android:background="@drawable/circle_border_gray"
+                                android:orientation="vertical"
+                                android:weightSum="473">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="310"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/_20sdp"
+                                        android:layout_height="@dimen/_40sdp"
+                                        android:layout_gravity="center_horizontal|top"
+                                        android:layout_marginTop="@dimen/_4sdp"
+                                        android:src="@drawable/icon_rate_hand" />
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="162"
+                                    android:background="@android:color/white" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="521" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="473">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="243" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="243">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="230">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="180" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:background="@drawable/background_gradient_gray2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="230">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="50"
+                                    android:orientation="horizontal">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="320">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="bottom|center_horizontal"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/_20sdp"
+                                                android:layout_height="@dimen/_20sdp"
+                                                android:layout_gravity="bottom"
+                                                android:layout_marginRight="@dimen/_15sdp"
+                                                android:src="@drawable/icon_rate_taxi_driver" />
+
+                                            <TextView
+                                                android:id="@+id/tvDriverName"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="bottom"
+                                                android:gravity="center"
+                                                android:text="Mr Han"
+                                                android:textColor="#808080"
+                                                android:textSize="@dimen/_14sdp"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="320">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="bottom|center_horizontal"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/_40sdp"
+                                                android:layout_height="@dimen/_18sdp"
+                                                android:layout_gravity="bottom"
+                                                android:layout_marginRight="18dp"
+                                                android:src="@drawable/icon_rate_taxi_car" />
+
+                                            <TextView
+                                                android:id="@+id/tvCarNumber"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="bottom"
+                                                android:text="HBA 60782"
+                                                android:textColor="#808080"
+                                                android:textSize="@dimen/_14sdp"
+                                                android:textStyle="bold" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="180" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="473">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="373" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="100"
+                            android:orientation="vertical"
+                            android:weightSum="385">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="top|center_horizontal"
+                                android:layout_weight="209"
+                                android:src="@drawable/circle_text_rate_taxi" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="176" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="633"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:weightSum="640">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="352" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="288"
+                    android:orientation="vertical"
+                    android:weightSum="252">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="163" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="89"
+                        android:orientation="horizontal"
+                        android:weightSum="352">
+
+                        <LinearLayout
+                            android:id="@+id/btnShare"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="268"
+                            android:orientation="vertical"
+                            android:weightSum="164">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="72"
+                                android:src="@drawable/icon_share_facebook" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="92"
+                                android:gravity="top|center_horizontal"
+                                android:text="@string/share"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="84" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="885">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="298"
+                android:orientation="vertical"
+                android:weightSum="587">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="309"></View>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="278"
+                    android:orientation="horizontal"
+                    android:weightSum="640">
+
+                    <ImageView
+                        android:layout_width="@dimen/rate_circle_image_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/rate_circle_image_dark_gray_margin_bottom"
+                        android:src="@drawable/circle_progress_bar_dark_gray" />
+
+                    <ImageView
+                        android:layout_width="@dimen/rate_circle_image_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/rate_circle_image_gray_margin_bottom"
+                        android:src="@drawable/circle_progress_bar_gray" />
+
+                    <bhtech.com.cabbytaxi.SupportClass.CircleProgressBarView
+                        android:id="@+id/ProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/rate_circle_margin_left"
+                        android:layout_marginTop="@dimen/rate_circle_margin_top" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="587"
+                android:orientation="vertical"
+                android:weightSum="298">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="215"
+                    android:orientation="horizontal"
+                    android:weightSum="640">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="535" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="105"
+                        android:orientation="horizontal"
+                        android:weightSum="535">
+
+                        <TextView
+                            android:id="@+id/tvAddAsFavouriteDriver"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="105"
+                            android:background="@drawable/rectangle_border_radius_dark_orange"
+                            android:gravity="center"
+                            android:text="@string/add_as_favourite_driver"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvAddAsFavouriteDriverGray"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="105"
+                            android:background="@drawable/rectangle_border_radius_dark_gray"
+                            android:gravity="center"
+                            android:text="@string/driver_added_thank"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_16sdp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="430" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="83"
+                    android:orientation="vertical"
+                    android:weightSum="215">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="32" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="183"
+                        android:background="@drawable/background_gradient_gray"
+                        android:orientation="vertical"></LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="885">
+
+            <FrameLayout
+                android:id="@+id/layoutKim"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="298">
+
+                <ImageView
+                    android:layout_width="@dimen/rate_image_width"
+                    android:layout_height="@dimen/rate_image_height"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="@dimen/rate_circle_image_margin_left"
+                    android:layout_marginTop="@dimen/rate_circle_image_margin_top"
+                    android:src="@drawable/background_circle_right" />
+
+                <ImageView
+                    android:layout_width="@dimen/rate_image_width"
+                    android:layout_height="@dimen/rate_image_height"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/rate_circle_image_margin_left"
+                    android:layout_marginTop="@dimen/rate_circle_image_margin_top"
+                    android:src="@drawable/background_circle_left" />
+
+                <ImageView
+                    android:id="@+id/drawLineImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="241" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="587" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="885"
+        android:orientation="vertical"
+        android:weightSum="122">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="120"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#c59e50" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#e3bf46" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/orange_button_background"
+            android:gravity="center"
+            android:text="@string/done_"
+            android:textColor="#2c3e50"
+            android:textSize="@dimen/_20sdp"
+            android:weightSum="120" />
+    </LinearLayout>
+</LinearLayout>

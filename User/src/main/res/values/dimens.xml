@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_image_width">64dp</dimen>
+    <dimen name="login_image_height">54dp</dimen>
+    <dimen name="login_height">54dp</dimen>
+    <dimen name="top_menu_height">54dp</dimen>
+    <dimen name="button_height2">58dp</dimen>
+    <dimen name="button_height2x2">110dp</dimen>
+    <dimen name="button_height">64dp</dimen>
+    <dimen name="login_heightx2">108dp</dimen>
+    <dimen name="line_height">1.5dp</dimen>
+    <dimen name="login_padding">30dp</dimen>
+    <dimen name="login_button_height">50dp</dimen>
+    <dimen name="login_edit_height">50dp</dimen>
+    <dimen name="padding_right_sidlingmenu">186dp</dimen>
+    <dimen name="layout_width_fragment_slidngmenu">250dp</dimen>
+    <dimen name="toolbar_height">@dimen/_45sdp</dimen>
+    <dimen name="padding_left_drchoosecar">24dp</dimen>
+    <dimen name="padding_right_drchoosecar">20dp</dimen>
+    <dimen name="padding_header_drchoosecar">14dp</dimen>
+    <dimen name="time_height_dr">44dp</dimen>
+    <dimen name="enter_code_margintop">-5dp</dimen>
+    <dimen name="enter_code_text_margintop">-3dp</dimen>
+    <dimen name="rate_image_width">73dp</dimen>
+    <dimen name="rate_circle_image_width">240dp</dimen>
+    <dimen name="rate_circle_image_margin_left">60dp</dimen>
+    <dimen name="rate_circle_margin_left">94px</dimen>
+    <dimen name="rate_circle_margin_top">3dp</dimen>
+    <dimen name="rate_circle_image_margin_top">220dp</dimen>
+    <dimen name="rate_image_height">100px</dimen>
+    <dimen name="rate_circle_image_gray_margin_bottom">20dp</dimen>
+    <dimen name="rate_circle_image_dark_gray_margin_bottom">18dp</dimen>
+</resources>

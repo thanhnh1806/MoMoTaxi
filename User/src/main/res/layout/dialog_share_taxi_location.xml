@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="825">
+
+    <TextView
+        android:id="@+id/tvTittle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="745"
+        android:background="#2d3e50"
+        android:gravity="center"
+        android:text="@string/share_taxi_location_via"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="78"
+        android:orientation="vertical"
+        android:weightSum="745">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="106"
+            android:orientation="vertical"
+            android:weightSum="639">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="213"
+                android:orientation="horizontal"
+                android:weightSum="640">
+
+                <FrameLayout
+                    android:id="@+id/btnWhatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="66.67dp"
+                            android:layout_height="66.67dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_whatapp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/whatsapp"
+                            android:textColor="#656565"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/btnMessaging"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="66.67dp"
+                            android:layout_height="66.67dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_message" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/Messaging"
+                            android:textColor="#656565"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="213"
+                android:orientation="horizontal"
+                android:weightSum="640">
+
+                <FrameLayout
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="66.67dp"
+                            android:layout_height="66.67dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_facebook" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/facebook"
+                            android:textColor="#656565"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/btnTwitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="66.67dp"
+                            android:layout_height="66.67dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_twitter" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/twitter"
+                            android:textColor="#656565"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="213"
+                android:orientation="horizontal"
+                android:weightSum="640">
+
+                <FrameLayout
+                    android:id="@+id/btnGooglePlus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="66.67dp"
+                            android:layout_height="66.67dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_googleplus" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/GooglePlus"
+                            android:textColor="#656565"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/btnGmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="66.67dp"
+                            android:layout_height="66.67dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/icon_gmail" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="@string/Gmail"
+                            android:textColor="#656565"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="639">
+
+            <TextView
+                android:id="@+id/cancel_textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/cancel_"
+                android:textAllCaps="true"
+                android:textColor="#b3b3b3"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

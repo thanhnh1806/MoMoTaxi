@@ -1,0 +1,486 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1009"
+    tools:context="bhtech.com.cabbydriver.Sales.SaleReportByDayView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="902"
+        android:background="@drawable/background_orange">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/my_best_sales"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_22sdp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center_vertical|left"
+                    android:src="@drawable/arrow_left" />
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="107"
+        android:orientation="vertical"
+        android:weightSum="902">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="799">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/car_status_info_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="640">
+
+                <FrameLayout
+                    android:id="@+id/layoutChooseDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="440">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="7 NOV"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_24sdp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:src="@drawable/arrow_down" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="103"
+            android:orientation="vertical"
+            android:weightSum="799">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="414">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/car_status_info_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical"
+                    android:weightSum="6">
+
+                    <LinearLayout
+                        android:id="@+id/layoutHour1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="434"
+                            android:gravity="center"
+                            android:text="08 - 12 H"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:weightSum="206" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="206"
+                            android:weightSum="434">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar1"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="170"
+                                android:background="@drawable/background_progress_bar"
+                                android:max="100"
+                                android:padding="2dp"
+                                android:progress="70"
+                                android:progressDrawable="@drawable/custom_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/tvMoney1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="264"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical|left"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="$ 80"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_18sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutHour2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="434"
+                            android:gravity="center"
+                            android:text="12 - 16 H"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:weightSum="206" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="206"
+                            android:weightSum="434">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar2"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="170"
+                                android:background="@drawable/background_progress_bar"
+                                android:max="100"
+                                android:padding="2dp"
+                                android:progress="70"
+                                android:progressDrawable="@drawable/custom_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/tvMoney2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="264"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical|left"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="$ 80"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_18sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutHour3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="434"
+                            android:gravity="center"
+                            android:text="16 - 20 H"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:weightSum="206" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="206"
+                            android:weightSum="434">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar3"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="170"
+                                android:background="@drawable/background_progress_bar"
+                                android:max="100"
+                                android:padding="2dp"
+                                android:progress="70"
+                                android:progressDrawable="@drawable/custom_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/tvMoney3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="264"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical|left"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="$ 80"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_18sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutHour4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="434"
+                            android:gravity="center"
+                            android:text="20 - 24 H"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:weightSum="206" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="206"
+                            android:weightSum="434">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar4"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="170"
+                                android:background="@drawable/background_progress_bar"
+                                android:max="100"
+                                android:padding="2dp"
+                                android:progress="70"
+                                android:progressDrawable="@drawable/custom_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/tvMoney4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="264"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical|left"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="$ 80"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_18sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutHour5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="434"
+                            android:gravity="center"
+                            android:text="24 - 04 H"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:weightSum="206" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="206"
+                            android:weightSum="434">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar5"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="170"
+                                android:background="@drawable/background_progress_bar"
+                                android:max="100"
+                                android:padding="2dp"
+                                android:progress="70"
+                                android:progressDrawable="@drawable/custom_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/tvMoney5"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="264"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical|left"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="$ 80"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_18sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutHour6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="434"
+                            android:gravity="center"
+                            android:text="04 - 08 H"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:weightSum="206" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="206"
+                            android:weightSum="434">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar6"
+                                style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_weight="170"
+                                android:background="@drawable/background_progress_bar"
+                                android:max="100"
+                                android:padding="2dp"
+                                android:progress="70"
+                                android:progressDrawable="@drawable/custom_progress_bar" />
+
+                            <TextView
+                                android:id="@+id/tvMoney6"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_weight="264"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical|left"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="$ 80"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_18sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="385">
+
+                <lecho.lib.hellocharts.view.PieChartView
+                    android:id="@+id/pieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

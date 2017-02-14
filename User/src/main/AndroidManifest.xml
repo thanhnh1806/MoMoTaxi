@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bhtech.com.cabbytaxi">
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen.SplashController"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.LoginController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".Register.RegisterController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SlidingMenu.SlidingMenuController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindTaxi.FindTaxiController"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".WaitTaxi.WaitingTaxiController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InTaxi.InTaxiController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EndTaxi.EndTaxiController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RateDriver.RateTaxiController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SNSSetting.SNSSettingController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FavouriteLocation.FavouriteLocationController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.RegistrationIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".Register.Company.CompanySettingController"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Register.Personal.ProfileSettingController"
+            android:configChanges="screenLayout|screenSize|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Receipt.ReceiptController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|screenLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfile.MyProfileController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FavouriteDriver.FavouriteDriverController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".History.HistoryController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".About.AboutCabbyController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SendFeedback.SendFeedbackController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login.ForgotPasswordController"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".services.GetLocationService"
+            android:exported="true" />
+
+        <activity
+            android:name=".FutureBooking.FutureBookingController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreditCardSetting.CreditCardSettingController"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".DeveloperInformation.DeveloperInformationController"
+            android:screenOrientation="portrait"></activity>
+
+    </application>
+
+</manifest>

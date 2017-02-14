@@ -1,0 +1,808 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="1009"
+    tools:context="bhtech.com.cabbydriver.Sales.SaleReportByMonthView">
+
+    <FrameLayout
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="901"
+        android:background="@drawable/background_orange">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/my_best_sales"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_22sdp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_vertical|left"
+                android:src="@drawable/arrow_left" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="108">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="901">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="798">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/car_status_info_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="640">
+
+                    <FrameLayout
+                        android:id="@+id/layoutChooseMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="440">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvMonth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="NOV"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_24sdp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:src="@drawable/arrow_down" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="200"
+                        android:gravity="center"
+                        android:text="@string/sort_by_month_week_day_date_range"
+                        android:textAllCaps="true"
+                        android:textColor="#ff0000"
+                        android:textSize="@dimen/_9sdp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="103"
+                android:orientation="vertical"
+                android:weightSum="798">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="538">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/car_status_info_bg" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_15sdp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="537">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="382"
+                                android:orientation="vertical"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:id="@+id/tvWeek1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="01 - 07 NOV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvWeek2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="08 - 15 NOV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvWeek3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="16 - 23 NOV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvWeek4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="24 - 31 NOV"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="155"
+                                android:orientation="horizontal"
+                                android:weightSum="382">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="119"
+                                    android:orientation="vertical"
+                                    android:weightSum="4">
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar1"
+                                        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/background_progress_bar"
+                                        android:max="100"
+                                        android:padding="2dp"
+                                        android:progress="70"
+                                        android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar2"
+                                        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/background_progress_bar"
+                                        android:max="100"
+                                        android:padding="2dp"
+                                        android:progress="70"
+                                        android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar3"
+                                        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/background_progress_bar"
+                                        android:max="100"
+                                        android:padding="2dp"
+                                        android:progress="70"
+                                        android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                    <ProgressBar
+                                        android:id="@+id/progressBar4"
+                                        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginBottom="@dimen/_5sdp"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/background_progress_bar"
+                                        android:max="100"
+                                        android:padding="2dp"
+                                        android:progress="70"
+                                        android:progressDrawable="@drawable/custom_progress_bar" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_10sdp"
+                                    android:layout_weight="263"
+                                    android:orientation="vertical"
+                                    android:weightSum="4">
+
+                                    <TextView
+                                        android:id="@+id/tvTotalMoney1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:ellipsize="marquee"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:gravity="center_vertical|left"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tvTotalMoney2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:ellipsize="marquee"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:gravity="center_vertical|left"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tvTotalMoney3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:ellipsize="marquee"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:gravity="center_vertical|left"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <TextView
+                                        android:id="@+id/tvTotalMoney4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:ellipsize="marquee"
+                                        android:focusable="true"
+                                        android:focusableInTouchMode="true"
+                                        android:gravity="center_vertical|left"
+                                        android:marqueeRepeatLimit="marquee_forever"
+                                        android:scrollHorizontally="true"
+                                        android:singleLine="true"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="@dimen/_13sdp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="4">
+
+                            <View
+                                android:id="@+id/layoutProgressBar1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:id="@+id/layoutProgressBar2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:id="@+id/layoutProgressBar3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+
+                            <View
+                                android:id="@+id/layoutProgressBar4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="260"
+                    android:orientation="vertical"
+                    android:weightSum="538">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="240"
+                        android:orientation="vertical"
+                        android:weightSum="248">
+
+                        <TextView
+                            android:id="@+id/tvDayRange"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="182"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/_30sdp"
+                            android:text="01 - 07 NOV"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/_18sdp"
+                            android:textStyle="bold" />
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="66"
+                            android:background="#f2f2f2">
+
+                            <LinearLayout
+                                android:id="@+id/layoutLineChart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_40sdp"
+                                android:layout_marginRight="@dimen/_40sdp"
+                                android:layout_weight="112"
+                                android:orientation="horizontal"
+                                android:weightSum="7">
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="1"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="MON"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="2"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="TUE"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="3"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="WED"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_orange_gradient"
+                                    android:orientation="vertical"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="4"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="THU"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="5"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="FRI"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="6"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="SAT"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay7"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="7"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu7"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="SUN"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/dayOfWeek8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    android:visibility="gone"
+                                    android:weightSum="182">
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="70" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="112"
+                                        android:orientation="vertical"
+                                        android:weightSum="2">
+
+                                        <TextView
+                                            android:id="@+id/tvDay8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="7"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+
+                                        <TextView
+                                            android:id="@+id/tvThu8"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:text="SUN"
+                                            android:textColor="@android:color/black"
+                                            android:textSize="@dimen/_12sdp" />
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="182">
+
+                                <lecho.lib.hellocharts.view.LineChartView
+                                    android:id="@+id/lineChart"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_40sdp"
+                                    android:layout_marginRight="@dimen/_40sdp"
+                                    android:layout_weight="70" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="112" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="298"
+                        android:weightSum="290">
+
+                        <lecho.lib.hellocharts.view.PieChartView
+                            android:id="@+id/pieChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/background_orange"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_left" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

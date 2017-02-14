@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bhtech.com.cabbydriver" >
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Connects to Internet Services. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/taxi_driver_app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SplashScreen.SplashController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EnterPinCode.EnterCodeController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".CarStatus.CarStatusController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChooseCar.ChooseCarController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FindCustomer.FindCustomerController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinishWork.FinishWorkController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs.AboutCabbyController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ThankYouDriver.ThankYouDriverController"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ChooseRouteToCustomer.ChooseRouteToCustomerController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TermsOfUse.TermsOfUseController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeveloperInformation.DeveloperInformationController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TripHistory.TripHistoryController"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MyGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.MyInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.RegistrationIntentService"
+            android:exported="false" />
+
+        <service
+            android:name=".services.GetLocationService"
+            android:exported="true" />
+
+        <activity
+            android:name=".ChooseRouteToDestination.ChooseRouteToDestinationController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePickUpLocation.ChangePickUpLocationController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DrivingToCustomer.DrivingToCustomerController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeDropOffLocation.ChangeDropOffLocationController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DrivingToDestination.DrivingToDestinationController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChargeCustomer.ChargeCustomerController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Alert.AlertController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyProfile.MyProfileController"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sales.SalesController"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ReportIncident.ReportIncidentController"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

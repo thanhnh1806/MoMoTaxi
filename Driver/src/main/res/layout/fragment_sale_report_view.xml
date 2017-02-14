@@ -1,0 +1,629 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1006"
+    tools:context="bhtech.com.cabbydriver.Sales.SaleReportByWeekView">
+
+    <TextView
+        android:id="@+id/tvDriverName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="898"
+        android:background="#efd152"
+        android:gravity="center"
+        android:text="Mr Han"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_23sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="108"
+        android:orientation="vertical"
+        android:weightSum="898">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="102"
+            android:orientation="vertical"
+            android:weightSum="796">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="693">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/background_gradient_gray2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <FrameLayout
+                        android:id="@+id/btnDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_no_background_gray_border_radius_15">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="Day"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_7sdp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:src="@drawable/arrow_down" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btnWeek"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_no_background_gray_border_radius_15">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/tvChooseWeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_7sdp"
+                            android:text="Week"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_7sdp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:src="@drawable/arrow_down" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btnMonth"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_no_background_gray_border_radius_15">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteMonth"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:text="Month"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_7sdp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:src="@drawable/arrow_down" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btnDateRange"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangle_no_background_gray_border_radius_15">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:text="Range"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/_12sdp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_7sdp"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginRight="@dimen/_7sdp"
+                            android:src="@drawable/arrow_down" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="103"
+                android:orientation="vertical"
+                android:weightSum="693">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="335"
+                    android:orientation="vertical"
+                    android:weightSum="358">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="288">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/tvTotalType"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/total_week"
+                                android:textAllCaps="true"
+                                android:textColor="#808080"
+                                android:textSize="@dimen/_17sdp" />
+
+                            <TextView
+                                android:id="@+id/tvTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center_vertical"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_17sdp" />
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="#ececec" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="70">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/background_gradient_gray2" />
+
+                        <lecho.lib.hellocharts.view.PieChartView
+                            android:id="@+id/pieChart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="358">
+
+                    <LinearLayout
+                        android:id="@+id/layoutProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="525">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="455"
+                            android:orientation="vertical"
+                            android:weightSum="7">
+
+                            <TextView
+                                android:id="@+id/tvWeek1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="MON"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:id="@+id/tvWeek2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="TUE"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:id="@+id/tvWeek3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="WED"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:id="@+id/tvWeek4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="THU"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="FRI"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="SAT"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="SUN"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="70"
+                            android:orientation="horizontal"
+                            android:weightSum="455">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="115"
+                                android:orientation="vertical"
+                                android:weightSum="7">
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar1"
+                                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_progress_bar"
+                                    android:max="100"
+                                    android:padding="2dp"
+                                    android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar2"
+                                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_progress_bar"
+                                    android:max="100"
+                                    android:padding="2dp"
+                                    android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar3"
+                                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_progress_bar"
+                                    android:max="100"
+                                    android:padding="2dp"
+                                    android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar4"
+                                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_progress_bar"
+                                    android:max="100"
+                                    android:padding="2dp"
+                                    android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar5"
+                                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_progress_bar"
+                                    android:max="100"
+                                    android:padding="2dp"
+                                    android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar6"
+                                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_progress_bar"
+                                    android:max="100"
+                                    android:padding="2dp"
+                                    android:progressDrawable="@drawable/custom_progress_bar" />
+
+                                <ProgressBar
+                                    android:id="@+id/progressBar7"
+                                    style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginBottom="@dimen/_4sdp"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/background_progress_bar"
+                                    android:max="100"
+                                    android:padding="2dp"
+                                    android:progressDrawable="@drawable/custom_progress_bar" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="340"
+                                android:orientation="vertical"
+                                android:weightSum="7">
+
+                                <TextView
+                                    android:id="@+id/tvTotalMoney1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_12sdp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="left"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalMoney2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_12sdp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="left"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalMoney3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_12sdp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="left"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalMoney4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_12sdp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="left"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalMoney5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_12sdp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="left"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalMoney6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_12sdp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="left"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalMoney7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/_12sdp"
+                                    android:layout_weight="1"
+                                    android:ellipsize="marquee"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="left"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/listProgressBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="0dp"
+                        android:visibility="invisible" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="796"
+            android:orientation="horizontal"
+            android:weightSum="640">
+
+            <FrameLayout
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="416"
+                android:background="@drawable/background_orange">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arow_left_black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="#d5ad4c" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnShowBestSale"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="224"
+                android:background="@drawable/background_orange"
+                android:gravity="center"
+                android:text="@string/show_my_best_sales"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_18sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

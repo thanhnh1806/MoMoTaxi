@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="rate_circle_image_width">450px</dimen>
+
+    <dimen name="rate_circle_margin_left">96px</dimen>
+    <dimen name="rate_circle_margin_top">5px</dimen>
+
+    <dimen name="rate_image_width">73dp</dimen>
+    <dimen name="rate_image_height">98px</dimen>
+    <dimen name="rate_circle_image_margin_top">480px</dimen>
+    <dimen name="rate_circle_image_margin_left">121px</dimen>
+</resources>

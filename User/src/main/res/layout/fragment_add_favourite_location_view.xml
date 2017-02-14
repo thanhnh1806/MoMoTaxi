@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bhtech.com.cabbytaxi.FavouriteLocation.FavouriteLocationAddView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#fcfcfc"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="#f7f9f9">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="@string/enter_location"
+                android:textColor="#2c3e50"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/btnThuNho"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:id="@+id/ivMinus"
+                    android:layout_width="25dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/black" />
+
+                <ImageView
+                    android:id="@+id/ivPlus"
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/black" />
+            </FrameLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layoutEnterLocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:visibility="visible">
+
+            <AutoCompleteTextView
+                android:id="@+id/etEnterLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/enter_location"
+                android:imeOptions="actionDone"
+                android:inputType="textAutoComplete"
+                android:singleLine="true"
+                android:textColor="#808080"
+                android:textSize="@dimen/_15sdp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnAddLocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/orange_button_background"
+            android:text="@string/add_location"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+    </LinearLayout>
+</FrameLayout>

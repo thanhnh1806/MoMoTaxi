@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="sdp-android-1.0.2">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/User/build/intermediates/exploded-aar/com.intuit.sdp/sdp-android/1.0.2/res" />
+      <root url="jar://$PROJECT_DIR$/User/build/intermediates/exploded-aar/com.intuit.sdp/sdp-android/1.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

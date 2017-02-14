@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bhtech.com.cabbytaxi.view.TaxiChargeView"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.78"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="637">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="248">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="30" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="218"
+                        android:background="@drawable/background_intaxi_gradient" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="248">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="188">
+
+                        <TextView
+                            android:id="@+id/tvDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:gravity="left|center_vertical"
+                            android:text="21 DEC 2015"
+                            android:textAllCaps="true"
+                            android:textColor="#808080"
+                            android:textSize="9pt" />
+
+                        <TextView
+                            android:id="@+id/tvTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="16dp"
+                            android:gravity="right|center_vertical"
+                            android:text="2.00 PM"
+                            android:textAllCaps="true"
+                            android:textColor="#808080"
+                            android:textSize="9pt" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="60"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="507"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="24.67dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icon_user_endtaxi"
+                                    android:padding="2dp"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="33.33dp"
+                                    android:layout_height="18dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icon_start_endtaxi"
+                                    android:padding="2dp"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="29.33dp"
+                                    android:layout_height="20.67dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icon_end_endtaxi"
+                                    android:padding="2dp"/>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="133"
+                            android:orientation="vertical"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:weightSum="580">
+
+                                <TextView
+                                    android:id="@+id/tvCustomerName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="400"
+                                    android:gravity="center_vertical"
+                                    android:text="Mr Zaid"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="8pt"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tvStartAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="KLCC"
+                                android:textColor="@android:color/black"
+                                android:textSize="7pt" />
+
+                            <TextView
+                                android:id="@+id/tvStopAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="Merena"
+                                android:textColor="@android:color/black"
+                                android:textSize="7pt"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="248">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="637">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="459"
+                        android:background="@drawable/background_endtaxi_gradient" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="178"
+                        android:background="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:weightSum="637">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="495">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="640">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="320"
+                                android:orientation="vertical"
+                                android:weightSum="142">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="119" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="23"
+                                    android:orientation="vertical"
+                                    android:weightSum="119">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_weight="27"
+                                        android:orientation="vertical"
+                                        android:weightSum="92">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="31">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="26dp"
+                                                android:layout_gravity="top|center_horizontal"
+                                                android:src="@drawable/icon_flag_endtaxi" />
+                                        </FrameLayout>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="61">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center_horizontal"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/tvMinutes"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:text="23"
+                                                    android:textColor="#808080"
+                                                    android:textSize="8pt" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:text="@string/mins"
+                                                    android:textColor="#808080"
+                                                    android:textSize="8pt" />
+                                            </LinearLayout>
+                                        </FrameLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="320"
+                                android:orientation="vertical"
+                                android:weightSum="142">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="108" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="34"
+                                    android:orientation="vertical"
+                                    android:weightSum="108">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_weight="27"
+                                        android:orientation="vertical"
+                                        android:weightSum="81">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="31">
+
+                                            <ImageView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="8dp"
+                                                android:layout_gravity="center_horizontal|top"
+                                                android:src="@drawable/icon_distance_endtaxi" />
+                                        </FrameLayout>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="50">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="match_parent"
+                                                android:layout_gravity="center_horizontal"
+                                                android:orientation="horizontal">
+
+                                                <TextView
+                                                    android:id="@+id/tvKm"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:text="10.4"
+                                                    android:textColor="#808080"
+                                                    android:textSize="8pt" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:text="@string/km"
+                                                    android:textColor="#808080"
+                                                    android:textSize="8pt" />
+                                            </LinearLayout>
+                                        </FrameLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.67dp"
+                            android:layout_gravity="top"
+                            android:background="#bcbcbc" />
+
+                        <View
+                            android:layout_width="0.67dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="#bcbcbc" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.67dp"
+                            android:layout_gravity="bottom"
+                            android:background="#bcbcbc" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="142"
+                        android:orientation="horizontal"
+                        android:weightSum="640">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="589" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="51"
+                            android:orientation="horizontal"
+                            android:weightSum="589">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="48"
+                                android:orientation="vertical"
+                                android:weightSum="495">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="111"
+                                    android:orientation="vertical"
+                                    android:weightSum="384">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="239">
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginTop="15dp"
+                                            android:gravity="center"
+                                            android:text="@string/total_charge"
+                                            android:textColor="#2c3e50"
+                                            android:textSize="12pt" />
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="145"
+                                        android:background="@drawable/icon_framemoney_endtaxi">
+
+                                        <TextView
+                                            android:id="@+id/tvCharge"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center"
+                                            android:text="$ 15.00"
+                                            android:textColor="#2c3e50"
+                                            android:textSize="24pt" />
+                                    </FrameLayout>
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="384" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="541" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.12"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="885"
+            android:weightSum="124">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="640">
+
+                <LinearLayout
+                    android:id="@+id/btnCreditCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320"
+                    android:background="#efd152"
+                    android:orientation="vertical"
+                    android:weightSum="124">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10.67dp"
+                        android:layout_weight="55">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/icon_paybycreditcard_endtaxi" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="69">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/pay_by_creadit_card"
+                            android:textColor="#384750"
+                            android:textSize="15.33dp" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnCash"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="320"
+                    android:background="#efd152"
+                    android:orientation="vertical"
+                    android:weightSum="124">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10.67dp"
+                        android:layout_weight="55">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:src="@drawable/icon_paybycash_endtaxi" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="69">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/pay_by_cash"
+                            android:textColor="#384750"
+                            android:textSize="15.33dp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.33dp"
+                android:layout_gravity="top"
+                android:background="#ddb640" />
+
+            <View
+                android:layout_width="0.67dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#c59428" />
+
+            <View
+                android:layout_width="0.67dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:background="#d7ae3a" />
+
+            <View
+                android:layout_width="0.67dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:background="#d7ae3a" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:background="@color/color_button_payment">
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="@string/next"
+            android:textSize="18sp"
+            android:textColor="@color/color_text_next"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_65sdp">
+
+    <LinearLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_5sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_location2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:singleLine="true"
+                android:text="Merana 1MK"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arow_right" />
+            </FrameLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_65sdp">
+
+        <LinearLayout
+            android:id="@+id/layoutEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_gravity="right">
+
+            <FrameLayout
+                android:id="@+id/btnEdit"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:background="#29abe2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/favourite_location_pencil" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/btnDelete"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="match_parent"
+                android:background="#d4145a">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/favourite_location_recycle_bin" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_65sdp"
+            android:weightSum="1">
+
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</FrameLayout>

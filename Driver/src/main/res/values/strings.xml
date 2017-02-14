@@ -1,0 +1,325 @@
+<resources>
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Back To Request</item>
+        <item>My Profile</item>
+        <item>Trip History</item>
+        <item>Car Status</item>
+        <item>Sales</item>
+        <item>Alert</item>
+        <item>Report Incident</item>
+        <item>Finish Work</item>
+        <item>Call Taxi Company</item>
+        <item>About</item>
+        <item>Terms Of Use</item>
+        <item>Developer Information</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/menu_backtorequest</item>
+        <item>@drawable/menu_myprofile</item>
+        <item>@drawable/menu_triphistory</item>
+        <item>@drawable/menu_carstatus</item>
+        <item>@drawable/menu_sales</item>
+        <item>@drawable/menu_alert</item>
+        <item>@drawable/menu_reportincident</item>
+        <item>@drawable/menu_finishwork</item>
+        <item>@drawable/menu_callcompany</item>
+        <item>@drawable/menu_about</item>
+        <item>@drawable/menu_termofuse</item>
+        <item>@drawable/menu_devinfo</item>
+    </array>
+    <string name="app_name">Asecro Drivers</string>
+    <string name="version_code">For Driver | Ver 0.1.2 Dev</string>
+    <string name="emailme">emailaddress@emailaddress.com</string>
+    <string name="triphistory_sortby_date">Date</string>
+    <string name="triphistory_sortby_price">Price</string>
+    <string name="alert_title">Alerts</string>
+
+    <string name="date_format_UTC">yyyy-MM-dd</string>
+    <string name="date_format_charge_customer">dd MMM yyyy</string>
+    <string name="time_format_charge_customer">HH:mm</string>
+    <string name="datetime_format_UTC">yyyy-MM-dd\'T\'HH:mm:ss\'Z\'</string>
+    <string name="date_format">EEE, MMM d yyyy</string>
+    <string name="trip_history_dateformat">dd MMM yyyy</string>
+
+    <string name="Subject">Subject</string>
+    <string name="submit">Submit</string>
+    <string name="sharegoogleplus">com.google.android.apps.plus</string>
+    <string name="sharetwitter">com.twitter.android</string>
+    <string name="sharewhatsapp">com.whatsapp</string>
+    <string name="sharefacebook">com.facebook.katana</string>
+    <string name="textplain">text/plain</string>
+    <string name="smsbody">sms_body</string>
+    <string name="sms">emailaddress@emailaddress.com</string>
+    <string name="httpmap">https://www.google.com/maps/place/</string>
+    <string name="httptwitter">https://twitter.com/intent/tweet?text=</string>
+    <string name="mailto">mailto:</string>
+    <string name="share">Share</string>
+    <string name="start">Start</string>
+    <string name="share_taxi_location">Share Taxi Location</string>
+    <string name="address">Menara 1MK, Jalan Kira</string>
+    <string name="yourDesstination">Your Destination</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="Messaging">Messaging</string>
+    <string name="facebook">Facebook</string>
+    <string name="GooglePlus">Google Plus</string>
+    <string name="Email">Email</string>
+    <string name="Gmail">Gmail</string>
+    <string name="twitter">Twitter</string>
+    <string name="cancel_">cancel</string>
+    <string name="Cancel">Cancel</string>
+    <string name="share_taxi_location_via">Share Taxi Location via...</string>
+    <string name="via">via</string>
+    <string name="welcome_people">Welcome People, Let&#xB4;s Get In The Ride</string>
+    <string name="welcome_to_cabby">Welcome to Cabby!</string>
+    <string name="name">Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="or_login_with">or login with</string>
+    <string name="new_to_cabby_let_sign_up">New to Cabby? Let&#xB4;s Sign-Up</string>
+    <string name="profile_setting">Profile Setting</string>
+    <string name="setting">Setting</string>
+    <string name="just_a_moment_to_set_up_your_profile">Just a moment to set up your profile</string>
+    <string name="your_account_has_been_activated">Your Account Has Been Activated</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_email">Your Email</string>
+    <string name="your_password">Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="pay_mode">Pay Mode</string>
+    <string name="payment">Payment</string>
+    <string name="payment_success">Payment Success</string>
+    <string name="creadit_card">Creadit Card</string>
+    <string name="choose_card_type">Choose Card Type</string>
+    <string name="card_number">Card Number</string>
+    <string name="cvv_code">CVV Code</string>
+    <string name="enter_your_card_information">Enter Your Card Information</string>
+    <string name="pay_by_creadit_card">Pay By Creadit Card</string>
+    <string name="pay_by_cash">Pay by Cash</string>
+    <string name="paid_by_cash">Paid by Cash</string>
+    <string name="pay_by_card">Pay by Card</string>
+    <string name="cash">Cash</string>
+    <string name="i_agree_on">I Agree on</string>
+    <string name="terms_of_use">Terms Of Use</string>
+    <string name="is_using_a_cab_using_Cabby">is using a cab using Cabby</string>
+    <string name="done">Done</string>
+    <string name="download_now">Download Now!</string>
+    <string name="done_">Done!</string>
+    <string name="login_error">Login Error</string>
+    <string name="username_or_password_invalid">Username or password invalid</string>
+    <string name="please_check_your_network">Please check your network</string>
+    <string name="please_recheck_your_username_or_password">Please recheck your username or passwork</string>
+    <string name="my_profile">My Profile</string>
+    <string name="price">Price</string>
+    <string name="history">History</string>
+    <string name="favourite_driver">Favourite Driver</string>
+    <string name="driving_to_destination">Driving To Destination</string>
+    <string name="receipt">Receipt</string>
+    <string name="post">post</string>
+    <string name="a_receipt_has_been_sent_to_you">A receipt has been sent to you.</string>
+    <string name="best_experience_when_riding_with_cabby_app">Best experience when riding with Cabby App</string>
+    <string name="user_id">User ID</string>
+    <string name="credit_card_setting">Credit Card Setting</string>
+    <string name="company_user">Company User</string>
+    <string name="sns_setting">SNS Setting</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="about_cabby">About Cabby</string>
+    <string name="term_of_use">Term Of Use</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="google_maps_key">AIzaSyBHwwl5e00zVcTFYkJZC4MRyxZ-TvI4Two</string>
+    <string name="google_geocoding_key">AIzaSyBuDTIzZl0srIUugguQOjVFxpmdd8gevtg</string>
+    <string name="public_cab_locations">Public Cab Locations</string>
+    <string name="waiting_for_get_your_location">Waiting for get your location</string>
+    <string name="requesting">Requesting...</string>
+    <string name="request_taxi">Request Taxi</string>
+    <string name="cab_request">Cab Request</string>
+    <string name="cancel">Cancel?</string>
+    <string name="taxis_found">Taxis Found</string>
+    <string name="enter_destination">Enter Destination</string>
+    <string name="enter_pin_code">Enter PIN Code</string>
+    <string name="wrong_code">Wrong Code</string>
+    <string name="enter">Enter</string>
+    <string name="find">Find!</string>
+    <string name="from">From</string>
+    <string name="friends">Friends</string>
+    <string name="to">To</string>
+    <string name="when">When?</string>
+    <string name="here">Here</string>
+    <string name="now">Now!</string>
+    <string name="datetime">Date &amp; Time</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="close">Close</string>
+    <string name="regular">Regular</string>
+    <string name="mpv">MPV</string>
+    <string name="luxury">Luxury</string>
+    <string name="tuktuk">Tuk-tuk</string>
+    <string name="km">Km</string>
+    <string name="favourite_location">Favourite Location</string>
+    <string name="you_did_not_save_any_favourite_location">You did not save any favourite location</string>
+    <string name="mr">Mr.</string>
+    <string name="mrs">Mrs.</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="taxi">Taxi</string>
+    <string name="taxi_charge">Taxi Charge</string>
+    <string name="total_charge">Total Charge</string>
+    <string name="arriving_in">Arriving in</string>
+    <string name="mins">Mins</string>
+    <string name="min">min</string>
+    <string name="waiting_time">Waiting Time</string>
+    <string name="secs">Secs</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="am">am</string>
+    <string name="pm">pm</string>
+    <string name="ok">Ok</string>
+    <string name="add_as_favourite_driver">Add as Favourite Driver!</string>
+    <string name="thank_you_for_talking_the_ride">Thank You for Talking the Ride.</string>
+    <string name="spend_a_momment_to_rate_this_driver">Spend a Moment to Rate This Driver</string>
+    <string name="rate_the_driver">Rate the Driver</string>
+    <string name="get_in_the_ride">Get in The Ride!</string>
+    <string name="driver">Driver</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="present_by_asecro">Present by ASECRO</string>
+    <string name="incorrect_pin_code">Incorrect PIN Code</string>
+    <string name="please_input_again">Please input again</string>
+    <string name="please_input_from_address">Please input from address</string>
+    <string name="please_input_from_location">Please input from location</string>
+    <string name="please_input_to_address">Please input to address</string>
+    <string name="please_input_to_location">Please input to location</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="start_work">Start Work!</string>
+    <string name="insert_car">Insert Car Plate Number</string>
+    <string name="good_morning">Good morning, </string>
+    <string name="good_afternoon">Good afternoon, </string>
+    <string name="good_evening">Good evening, </string>
+    <string name="previous_mile">Previous Mileage</string>
+    <string name="kilometer">km</string>
+    <string name="sprevious_mile"> &#x2A;&#x2A;,&#x2A;&#x2A;&#x2A;</string>
+    <string name="you_have_choosen">You Have Chosen</string>
+    <string name="choose_your_car">Choose Your Car</string>
+    <string name="choose_car_fail">Choose Car Fail</string>
+    <string name="please_enter_mile1">Please Enter The Car&#xB4;s ODO Mileage</string>
+    <string name="please_enter_mile2">Before Driving</string>
+    <string name="odometer">(?)</string>
+    <string name="dialog_error_choosecar">is unavailable \n for driving</string>
+    <string name="driver_added_thank">Driver Added. Thanx!</string>
+    <string name="say_something_about_this">Say something about this</string>
+    <string name="from_you">From You</string>
+    <string name="scroll_for_more">Scroll for more</string>
+    <string name="accept_">Accept!</string>
+    <string name="list_view">List View</string>
+    <string name="refresh">Refresh</string>
+    <string name="map_view">Map View</string>
+    <string name="better_way_to_get_around_town">Better Way To Get Around Town!</string>
+    <string name="about_cabby_">Reach to your destination with Cabby, the convenient way to get around town. Whether you are on business or leisure, Cabby let you request a Taxi without worrying on your safety!</string>
+    <string name="finishwork_mileage_msg">Have a Look at Car\'s Dashboard Meter\nPlease input the current car mileasge</string>
+    <string name="finishwork_mileage_title">Car Mileage (ODO)</string>
+    <string name="finishwork_button">Finish Job &#x26; Log Out</string>
+    <string name="great_job">Great Job!</string>
+    <string name="thank_you_driver">Thank You</string>
+
+    <string name="please_login">You haven\'t logged in yet, or your session is expired.</string>
+    <string name="choose_route_for_pick_up">Choose Route for Pick-Up</string>
+    <string name="pick_up_on">Pick Up On</string>
+    <string name="pick_up_user">Pick-Up User</string>
+
+    <string name="passengers">Passengers</string>
+    <string name="total_sales">Total Sales</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="total_hours">Total Hours</string>
+
+    <string name="quite_app_msg">Do you want to quit this app?</string>
+    <string name="get_result_failed_msg">Cannot get result from server.</string>
+    <string name="about_app">Reach to your destination with Cabby, the convenient way to get around town. Whether you are on business or leisure, Cabby lets you request a Taxi without worrying on our safety!</string>
+    <string name="about_taxi">For a company, we offer the All-In-One Management Tools so that you can track your user, transaction history, destination history and much more!</string>
+    <string name="about_user">With Cabby, we are using a smart system to suggest the fastest and efficient route. We also have a smart system to monitor and take care of your journey!</string>
+
+    <string name="change_location">Change Location</string>
+    <string name="total_drove">Total Drove in <i>Km</i></string>
+    <string name="car_age">Car Age (Month)</string>
+    <string name="next_maintenance">Next Maintenance Date</string>
+    <string name="remaining_km">Km Remaining</string>
+    <string name="car_break_down">Car Break-Down</string>
+    <string name="car_accident">Accident Report</string>
+    <string name="car_status">Car Status</string>
+    <string name="finish_work_title">Finish Work</string>
+    <string name="non_app">non-app</string>
+
+    <string name="you_did_not_choose_any_customer">You did not choose any customer</string>
+    <string name="dev_info_title">Developer Information</string>
+    <string name="dev_info_link">https://asecro.com/develop</string>
+    <string name="trip_history_title">Trip History</string>
+    <string name="trip_history_sort_by">Sort by</string>
+    <string name="trip_history_month">Month</string>
+
+    <string name="navigation">Navigation</string>
+    <string name="change_pick_up_location">Change Pick Up Location</string>
+    <string name="type_a_new_pick_up_location">Type a new pick-up location</string>
+    <string name="request_id_null">Request Id Null</string>
+    <string name="something_wrong_when_choose_car">Something wrong when choose car</string>
+    <string name="user_cancel_request">User cancel request</string>
+    <string name="driving_to_customer">Driving to Customer</string>
+    <string name="show_navi">Show Navi</string>
+    <string name="press">Press</string>
+    <string name="when_the_customer_aboard">when the customer aboard</string>
+    <string name="json_result_code_wrong">Json Result Code Wrong</string>
+    <string name="have_exception_when_parse_json">Have exception when parse Json</string>
+    <string name="change_destination">Change Destination</string>
+    <string name="type_a_new_destination_place">Type a new destination place</string>
+
+    <string name="choose_route">Choose Route</string>
+    <string name="finish">Finish</string>
+    <string name="highway_tool_price">+ highway toll price $</string>
+    <string name="next">Next</string>
+    <string name="customer_email">Customer\'s Email</string>
+    <string name="reaching_customer">Reaching customer</string>
+    <string name="going_destination">Going Destination</string>
+
+    <string name="future_booking_pickup">START PICK-UP</string>
+    <string name="future_booking_title">Taxi booking on </string>
+    <string name="receipt_was_sent_to_customer">Receipt Was Sent\nTo Customer</string>
+    <string name="payment_screen_has_sent_to_customer">Payment Screen\nHas Sent to Customer</string>
+    <string name="cancel_payment_via_creditcard">Cancel payment via credit card?</string>
+    <string name="credit_card_payment_was_successful">Credit Card Payment\nwas Successful.</string>
+    <string name="credit_card_payment_was_unsuccessful">Credit Card Payment\nWas Unsuccessful. Please\nTry Again or Change Credit Card</string>
+    <string name="my_best_sales">My Best Sales</string>
+    <string name="sort_by_month_week_day_date_range"><![CDATA[* Sort by month, week, day & date range]]></string>
+    <string name="sales">Sales</string>
+    <string name="show_my_best_sales">Show My Best Sales</string>
+    <string name="total_week">Total Week</string>
+    <string name="total">Total</string>
+    <string name="can_not_find_direction">Can not find Direction</string>
+    <string name="can_not_find_taxi_company_phone_number">Can not find Taxi Company phone number</string>
+    <string name="customer_confirmed">Customer confirmed</string>
+    <string name="can_not_get_customer_phone_number">Can not get customer phone number</string>
+    <string name="this_booking_was_cancelled_on">This booking was cancelled on</string>
+    <string name="your_google_map_is_out_of_date">Your Google Map is out of date</string>
+    <string name="taxi_booked">Taxi booked</string>
+    <string name="from_date_must_be_different_than_to_date">From date must be different than To date</string>
+    <string name="error_authToken_please_login_again">Error authToken. Please login again</string>
+    <string name="driver_profile">Driver\'s Profile</string>
+    <string name="working_hour">Working Hour</string>
+    <string name="date_range">date range</string>
+    <string name="mileage">Mileage</string>
+    <string name="day">Day</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+    <string name="hours">hours</string>
+    <string name="remember_me">Remember me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="send">Send</string>
+    <string name="call_company">Call Company</string>
+    <string name="call_police">Call Police</string>
+    <string name="current_location">Current Location</string>
+    <string name="map_code">Map Code</string>
+    <string name="send_report_incident_successfuly">Send report incident successfuly</string>
+    <string name="this_request_has_been_cancelled_by_user">This request has been cancelled by user</string>
+    <string name="application_can_not_work_without_some_permission">Application can not work without some permission</string>
+</resources>

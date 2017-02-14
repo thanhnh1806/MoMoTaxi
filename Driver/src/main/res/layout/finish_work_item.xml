@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="#FFF">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tvTodayResultTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/gray_text_car"
+            android:text="Passengers"/>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:id="@+id/tvTodayResultValue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="22dp"
+            android:text="100"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="510dp"
+    android:orientation="vertical"
+    android:weightSum="908">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="819"
+        android:background="#2d3e50">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/enter_your_card_information"
+            android:textColor="#cbcfd2"
+            android:textSize="7pt" />
+
+        <FrameLayout
+            android:id="@+id/btnCloseDialog"
+            android:layout_width="59.33dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_exit" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.67dp"
+            android:layout_gravity="bottom"
+            android:background="#626e7c" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="89"
+        android:orientation="vertical"
+        android:weightSum="819">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="99"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingBottom="18dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:weightSum="720">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="597">
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="$ 15.00"
+                    android:textColor="@android:color/black"
+                    android:textSize="18pt" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.33dp"
+                    android:background="#e6e6e6" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="123"
+                android:orientation="vertical"
+                android:weightSum="597">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="435"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="323"
+                        android:gravity="center_horizontal|top"
+                        android:text="@string/choose_card_type"
+                        android:textColor="#303030"
+                        android:textSize="7pt" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="112">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/icon_visa_endtaxi">
+                                </ImageView>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="10dp"
+                                    android:src="@drawable/icon_master_card">
+                                </ImageView>
+                            </FrameLayout>
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RadioButton
+                                android:id="@+id/rbVisa"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:id="@+id/rbMasterCard"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1" />
+                        </RadioGroup>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1.33dp"
+                            android:layout_gravity="top"
+                            android:background="#c0c0c0" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.67dp"
+                            android:layout_gravity="bottom"
+                            android:background="#808080" />
+
+                        <View
+                            android:layout_width="0.67dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="#808080" />
+
+                        <View
+                            android:layout_width="0.67dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="#9f9f9f" />
+
+                        <View
+                            android:layout_width="0.67dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="0.67dp"
+                            android:background="#dfdfdf" />
+
+                        <View
+                            android:layout_width="0.67dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:background="#808080" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:layout_weight="162"
+                    android:orientation="vertical"
+                    android:weightSum="4">
+
+                    <EditText
+                        android:id="@+id/etCardNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="@string/card_number"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/etCVVCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="@string/cvv_code"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="@string/name"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="@string/phone_number"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="720"
+            android:background="#efd252">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@android:color/black"
+                android:textSize="12pt" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dp"
+                android:layout_gravity="top"
+                android:background="#dfc592" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="0.67dp"
+                android:background="#d7ae3a" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.67dp"
+                android:layout_gravity="bottom"
+                android:background="#cb9d2e" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

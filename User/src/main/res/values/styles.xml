@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="CustomRatingBar" parent="Theme.AppCompat">
+        <item name="android:progressDrawable">@drawable/ratingstar</item>
+        <item name="android:minHeight">@dimen/_17sdp</item>
+        <item name="android:maxHeight">@dimen/_17sdp</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton">
+        <item name="android:background">@drawable/radio_button_background</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="@android:style/Widget.CompoundButton">
+        <item name="android:background">@drawable/checkbox_background</item>
+        <item name="android:button">@null</item>
+    </style>
+</resources>

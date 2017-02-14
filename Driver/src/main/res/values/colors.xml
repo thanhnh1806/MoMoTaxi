@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#333333</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="orangeDark">#dfa831</color>
+    <color name="orangeLight">#efd152</color>
+    <color name="brown">#8f6207</color>
+    <color name="endtaxi_gray">#cccccc</color>
+    <color name="gray">#d6d6d6</color>
+    <color name="gray2">#e6e6e6</color>
+    <color name="gray3">#adacac</color>
+    <color name="gray_border">#d1d0d0</color>
+    <color name="gray_text_car">#858a8e</color>
+    <color name="grayLight">#f2f2f2</color>
+    <color name="brownLight">#c28f25</color>
+    <color name="top_menu_black">#2b2a29</color>
+    <color name="colorTexview">#FFFFFF</color>
+    <color name="colorlayout_item_list_slidingmenu">#666666</color>
+    <color name="black">#000000</color>
+    <color name="while_tran_60">#99FFFFFF</color>
+    <color name="green_light">#35cc0a</color>
+    <color name="green_shadow">#056005</color>
+    <color name="while_drchoosecar">#99e8e8e8</color>
+    <color name="gray_drchoosecar">#b9babb</color>
+    <color name="black_tran45">#1A000000</color>
+    <color name="black_tran">#00000000</color>
+    <color name="enter_code_text_color">#808080</color>
+    <color name="list_background">#80000000</color>
+    <color name="list_background_pressed">#CC000000</color>
+    <color name="list_background_end_item">#CC000000</color>
+    <color name="list_divider">#9f9f9f</color>
+    <color name="counter_text_bg">#FBED4F</color>
+    <color name="polyline_choose">#00b2fd</color>
+    <color name="polyline_unchoose">#aeafad</color>
+</resources>

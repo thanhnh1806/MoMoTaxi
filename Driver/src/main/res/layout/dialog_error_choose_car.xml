@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="208dp"
+    android:layout_gravity="center"
+    tools:context=".ChooseCar.ChooseCarDialogError">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/popup_unavailable_car" />
+
+    <TextView
+        android:id="@+id/tv_dialog_carnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="HBA"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_carnumber"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/dialog_error_choosecar"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_choosecar_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:background="@null"
+        android:text="@string/ok"
+        android:textColor="@color/green_shadow"
+        android:textSize="18sp" />
+</RelativeLayout>

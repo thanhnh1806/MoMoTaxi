@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="bhtech.com.cabbytaxi.FavouriteLocation.FavouriteLocationListView">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:background="@drawable/rectangle_background_orange_border_brown">
+
+        <FrameLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_1sdp">
+
+            <AutoCompleteTextView
+                android:id="@+id/spMonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/orangeLight"
+                android:focusable="false" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/orangeLight" />
+
+            <TextView
+                android:id="@+id/tvMonth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@color/orangeLight"
+                android:gravity="center"
+                android:text="NOV"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_18sdp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@color/orangeLight">
+
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/arow_down_white" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/ivAdd"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_4sdp"
+                android:src="@drawable/favourite_location_icon_add" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/rvFavouriteLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

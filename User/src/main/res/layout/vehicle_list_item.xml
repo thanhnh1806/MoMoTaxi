@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loVehicle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/_60sdp"
+    android:minWidth="@dimen/_64sdp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/ivCar1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|bottom"
+        android:visibility="invisible" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/ivCar2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|bottom" />
+</FrameLayout>

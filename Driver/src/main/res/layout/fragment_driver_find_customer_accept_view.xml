@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/_65sdp"
+    android:background="#A6000000">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="223">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="270">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="223"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="85dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="5dp"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/user_id"
+                                    android:textAllCaps="true"
+                                    android:textColor="#cccccc" />
+
+                                <TextView
+                                    android:id="@+id/tvUserId"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_vertical"
+                                    android:text="33214"
+                                    android:textAllCaps="true"
+                                    android:textColor="#999999" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="47">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <FrameLayout
+                                    android:id="@+id/layoutBookingFurture"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_90sdp"
+                                    android:layout_marginBottom="@dimen/_minus20sdp"
+                                    android:visibility="visible">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="@dimen/_50sdp"
+                                        android:layout_gravity="bottom"
+                                        android:layout_marginLeft="@dimen/_20sdp"
+                                        android:layout_marginRight="@dimen/_30sdp"
+                                        android:orientation="horizontal">
+
+                                        <FrameLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent">
+
+                                            <ImageView
+                                                android:layout_width="@dimen/_28sdp"
+                                                android:layout_height="@dimen/_28sdp"
+                                                android:layout_gravity="center"
+                                                android:layout_margin="@dimen/_5sdp"
+                                                android:src="@drawable/icon_warning" />
+                                        </FrameLayout>
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@drawable/rectangle_background_blue_radius_5">
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:singleLine="true"
+                                                    android:text="@string/pick_up_on"
+                                                    android:textAllCaps="true"
+                                                    android:textColor="@android:color/white"
+                                                    android:textSize="@dimen/_11sdp" />
+
+                                                <LinearLayout
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_gravity="center"
+                                                    android:orientation="horizontal">
+
+                                                    <TextView
+                                                        android:id="@+id/tvBookingFurtureTime"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:singleLine="true"
+                                                        android:text="2:30"
+                                                        android:textAllCaps="true"
+                                                        android:textColor="@android:color/white"
+                                                        android:textSize="@dimen/_20sdp"
+                                                        android:textStyle="bold" />
+
+                                                    <TextView
+                                                        android:id="@+id/tvBookingFurtureDate"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:singleLine="true"
+                                                        android:text="29 DEC"
+                                                        android:textAllCaps="true"
+                                                        android:textColor="@android:color/white"
+                                                        android:textSize="@dimen/_20sdp" />
+                                                </LinearLayout>
+                                            </LinearLayout>
+                                        </FrameLayout>
+                                    </LinearLayout>
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_130sdp"
+                                    android:layout_marginRight="@dimen/_10sdp"
+                                    android:weightSum="550">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="358">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="true"
+                                                android:text="@string/from"
+                                                android:textAllCaps="true"
+                                                android:textSize="@dimen/_13sdp" />
+
+                                            <ImageView
+                                                android:layout_width="@dimen/_60sdp"
+                                                android:layout_height="@dimen/_40sdp"
+                                                android:src="@drawable/icon_start_endtaxi" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="192">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center_vertical"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/tvStartPlace"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="true"
+                                                android:text="Menara ING"
+                                                android:textColor="@android:color/black"
+                                                android:textSize="@dimen/_27sdp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:id="@+id/tvStartAddress"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:singleLine="false"
+                                                android:text="Blue Station, Menare ING"
+                                                android:textColor="@android:color/black"
+                                                android:textSize="@dimen/_14sdp" />
+                                        </LinearLayout>
+                                    </FrameLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="bottom"
+                                android:background="@drawable/background_gradient_gray" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivClose"
+                        android:layout_width="@dimen/_47sdp"
+                        android:layout_height="@dimen/_47sdp"
+                        android:layout_gravity="top|left"
+                        android:src="@drawable/icon_close" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="550">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="358">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="@string/to"
+                                android:textAllCaps="true"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_60sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:src="@drawable/icon_end_endtaxi" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="192">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvStopPlace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:text="KLCC"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_27sdp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvStopAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="false"
+                                android:text="Menara 1MK, Jalan Kiara 1"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/_14sdp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.dd.ShadowLayout
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            app:sl_cornerRadius="100dp"
+            app:sl_dx="0dp"
+            app:sl_dy="0dp"
+            app:sl_shadowColor="#33000000"
+            app:sl_shadowRadius="3dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle_background_opacity_border_white">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/circle_background_opacity_border_white">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/circle_background_white_border_gray">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/avatar_green" />
+                    </FrameLayout>
+                </FrameLayout>
+            </FrameLayout>
+        </com.dd.ShadowLayout>
+    </FrameLayout>
+
+</FrameLayout>

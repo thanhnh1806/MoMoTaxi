@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rate_circle_image_width">317px</dimen>
+    <dimen name="rate_circle_image_gray_margin_bottom">20px</dimen>
+    <dimen name="rate_circle_image_dark_gray_margin_bottom">17px</dimen>
+
+    <dimen name="rate_circle_margin_left">64px</dimen>
+    <dimen name="rate_circle_margin_top">6px</dimen>
+
+    <dimen name="rate_image_width">105px</dimen>
+    <dimen name="rate_image_height">100px</dimen>
+    <dimen name="rate_circle_image_margin_top">283px</dimen>
+    <dimen name="rate_circle_image_margin_left">72px</dimen>
+</resources>
